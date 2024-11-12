@@ -107,3 +107,59 @@ function calculateRhombusArea(){
     
     
 }
+
+/**
+ * Calculate Pentagon Area
+ * 
+ */
+function caculatePentagonArea(){
+    //find p of the pentagon
+    const getPentagonP = document.getElementById('pentagon-p');
+    const getPentagonPValue = getPentagonP.value;
+    const p = parseFloat(getPentagonPValue);
+    console.log(p);
+    
+
+    //find b of the pentagon
+    const getPentagonB = document.getElementById('pentagon-b');
+    const getPentagonBValue = getPentagonB.value;
+    const b = parseFloat(getPentagonBValue);
+    console.log(b);
+
+    //calculate pentagon area
+    const pentagonArea = 0.5 * p * b;
+    console.log(pentagonArea);
+
+    const showPentagonArea = document.getElementById('pentagon-result');
+    showPentagonArea.innerText = pentagonArea;
+    
+    
+}
+
+/**
+ * Calculate Ellipse Area
+ * 
+ */
+function caculateEllipseArea(){
+    //find p of the Ellipse
+    const getEllipseA = document.getElementById('ellipse-a');
+    const getEllipseAValue = getEllipseA.value;
+    const a = parseFloat(getEllipseAValue);
+    console.log(a);
+    
+
+    //find b of the pentagon
+    const getEllipseB = document.getElementById('ellipse-b');
+    const getEllipseBValue = getEllipseB.value;
+    const b = parseFloat(getEllipseBValue);
+    console.log(b);
+
+    //calculate pentagon area
+    const ellipseArea = 3.1416 * a * b;
+    console.log(ellipseArea);
+
+    const showEllipseArea = document.getElementById('ellipse-result');
+    showEllipseArea.innerText = ellipseArea;
+    
+    
+}

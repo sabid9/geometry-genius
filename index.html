@@ -120,33 +120,51 @@
               </div>
             </div>
           </div>
+          <!-- Card Pentagon -->
           <div class="card bg-base-100 w-96 shadow-xl">
             <figure>
               <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes"
+                src="images/pentagon.png"
               />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="text-center font-bold">Pentagon</h2>
+              <p class="text-center">Area(A) = 0.5 x p x b</p>
+              <div class="m-1">
+                <input id="pentagon-p" class="w-24 p-4 h-2" type="text" placeholder="P" />
+                <span>cm</span>
+                <input id="pentagon-b" class="w-24 p-4 h-2" type="text" placeholder="B" />
+                <span>cm</span>
+              </div>
+              <div>
+                <p>The Area is: <span id="pentagon-result"> </span>cm <sup>2</sup></p>
+              </div>
+              <div class="card-actions">
+                <button onclick="caculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
+          <!-- Card Ellipse -->
           <div class="card bg-base-100 w-96 shadow-xl">
             <figure>
               <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes"
+                src="images/ellipse.png"
               />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="text-center font-bold">Ellipse</h2>
+              <p class="text-center">Area(A) = pi x a x b</p>
+              <div class="m-1">
+                <input id="ellipse-a" class="w-24 p-4 h-2" type="text" placeholder="a" />
+                <span>cm</span>
+                <input id="ellipse-b" class="w-24 p-4 h-2" type="text" placeholder="b" />
+                <span>cm</span>
+              </div>
+              <div>
+                <p>The Area is: <span id="ellipse-result"> </span>cm <sup>2</sup></p>
+              </div>
+              <div class="card-actions">
+                <button onclick="caculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
