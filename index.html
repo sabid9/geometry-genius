@@ -81,7 +81,7 @@
             </figure>
             <div class="card-body">
               <h2 class="font-bold text-center">Parallelogram</h2>
-              <p>Area (A) = b x h</p>
+              <p class="text-center">Area (A) = b x h</p>
               <div class="m-1">
                 <input id="parallelo-base" class="w-24 p-4 h-2" type="text" placeholder="B" />
                 <span>cm</span>
@@ -93,6 +93,45 @@
               </div>
               <div class="card-actions ">
                 <button onclick="caculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card Rhombus -->
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+              <img
+                src="images/rhombus.png"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center font-bold">Rhombus</h2>
+              <p class="text-center">Area (A) = 0.5 * d1 * d2</p>
+              <div class="m-1">
+                <input id="rhombus-d1" class="w-24 p-4 h-2" type="text" placeholder="d1" />
+                <span>cm</span>
+                <input id="rhombus-d2" class="w-24 p-4 h-2" type="text" placeholder="d2" />
+                <span>cm</span>
+              </div>
+              <div>
+                <p>The Area is: <span id="rhombus-result"> </span>cm <sup>2</sup></p>
+              </div>
+              <div class="card-actions">
+                <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure>
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
               </div>
             </div>
           </div>

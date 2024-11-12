@@ -80,3 +80,30 @@ function caculateParallelogramArea(){
     const showParallelogramResult = document.getElementById('parallelo-result');
     showParallelogramResult.innerText = parallelogramArea;
 }
+
+/**
+ * calculate Rhombus Area
+ * 
+ */
+function calculateRhombusArea(){
+    //find d1 of the rhombus
+    const getRhombusD1 = document.getElementById('rhombus-d1')
+    const getRhombusD1Value = getRhombusD1.value;
+    const d1 = parseFloat(getRhombusD1Value);
+    console.log(d1);
+
+    // find d2 of the rhombus
+    const getRhombusD2 = document.getElementById('rhombus-d2')
+    const getRhombusD2Value = getRhombusD2.value;
+    const d2 = parseFloat(getRhombusD2Value);
+    console.log(d2);
+
+    //calculate the Rhombus Area
+    const rhombusArea = 0.5 * d1 * d2;
+    console.log(rhombusArea);
+
+    const showRhombusArea = document.getElementById('rhombus-result');
+    showRhombusArea.innerText = rhombusArea;
+    
+    
+}
