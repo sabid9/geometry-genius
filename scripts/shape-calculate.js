@@ -54,3 +54,29 @@ function caculateRectangleArea(){
     const showRectangleArea = document.getElementById('rectangle-result');
     showRectangleArea.innerText = rectangleArea;
 }
+
+/**
+ * Calculate Parallelogram Area
+ * 
+ */
+
+function caculateParallelogramArea(){
+    // Find the Base
+    const getParallelogramBase = document.getElementById('parallelo-base');
+    const getBaseValue = getParallelogramBase.value;
+    const base = parseFloat(getBaseValue);
+    console.log(base);
+
+    //Find the height
+    const getParallelogramHeight = document.getElementById('parallelo-height');
+    const getHeightValue = getParallelogramHeight.value;
+    const height = parseFloat(getHeightValue);
+    console.log(height);
+
+    // calculate the area
+    const parallelogramArea = base * height;
+    console.log(parallelogramArea);
+
+    const showParallelogramResult = document.getElementById('parallelo-result');
+    showParallelogramResult.innerText = parallelogramArea;
+}
